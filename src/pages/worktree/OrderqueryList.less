@@ -1,0 +1,115 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.tableList {
+    .tableListOperator {
+        margin-bottom: 16px;
+
+        button {
+            margin-right: 8px;
+        }
+    }
+    :global {
+        .ant-card-body {
+            zoom: 1;
+            padding-top: 24px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.avatarWrapper {
+    :global {
+        img {
+            height: unset;
+        }
+    }
+}
+
+.my_button_reg{
+       height: 30px;
+       width: 60px;
+       background: #40a9ff;
+       color: #fff;
+       border-radius: 5px;
+       display: inline-block;
+       text-align: center;
+       line-height: 30px;
+       cursor:pointer
+}
+.my_button_date{
+    height: 30px;
+    width: 60px;
+    margin-left: 5px;
+    background: #40a9ff;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    cursor:pointer
+}
+
+.formlabel{
+    :global {
+        .ant-form-item-label{
+                text-align:center;
+                width:30px !important;
+        }
+        .ant-calendar-picker-icon{
+            margin-right:16px;
+        }
+     
+    }
+
+}
+
+.formicon{
+    :global {
+        .ant-calendar-picker-icon{
+            margin-right:16px;
+        }
+    }
+}
+
+.tableListForm {
+    :global {
+        .ant-form-item {
+            display: flex;
+            margin-right: 0;
+            margin-bottom: 24px;
+
+            > .ant-form-item-label {
+                width: 100px;
+                padding-right: 8px;
+                line-height: 32px;
+            }
+
+            .ant-form-item-control {
+                line-height: 32px;
+            }
+        }
+
+        .ant-form-item-control-wrapper {
+            flex: 1;
+        }
+    }
+
+    .submitButtons {
+        display: block;
+        margin-bottom: 24px;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: @screen-lg) {
+    .tableListForm :global(.ant-form-item) {
+        margin-right: 24px;
+    }
+}
+
+@media screen and (max-width: @screen-md) {
+    .tableListForm :global(.ant-form-item) {
+        margin-right: 8px;
+    }
+}

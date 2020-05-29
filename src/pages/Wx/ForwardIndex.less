@@ -1,0 +1,297 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.tabBar {
+    border-bottom: 1px solid #ccc;
+    position     : fixed;
+    top          : 0;
+    z-index      : 999;
+    width        : 100%;
+}
+
+.my_list {
+    flex-basis                : initial;
+    overflow-y                : scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling        : touch;
+    height                    : calc(100vh - 50px);
+    padding-left              : 10px;
+    padding-right             : 10px;
+}
+
+.my_list_teoch {
+    -webkit-overflow-scrolling: touch;
+}
+
+.display {
+    display: none !important;
+}
+
+:global {
+    .am-modal-transparent {
+        width: 80%;
+    }
+}
+
+.index_content {
+    height     : 100%;
+    padding-top: 16px;
+
+    :global {
+        .am-list {
+            min-width: 0 !important;
+            max-width: 100%;
+        }
+
+        .am-list-body {
+            position        : relative;
+            // left         :30px;
+            background-color: #f8f8f8;
+            border-top      : none;
+            border-bottom   : none;
+        }
+
+        .am-list-header {
+            padding   : 15px 0 9px 0;
+            font-size : 14px;
+            color     : #888;
+            width     : 100%;
+            box-sizing: border-box;
+        }
+
+        .ant-input-affix-wrapper {
+            .ant-input:not(:first-child) {
+                padding-left: 38px;
+            }
+        }
+
+        .ant-input:not(.ant-input-disabled) {
+            border-color      : #fff;
+            border-right-width: 1px !important;
+            border-radius     : 25px;
+        }
+
+        .am-checkbox-inner {
+            position     : absolute;
+            right        : 0;
+            width        : 20px;
+            height       : 20px;
+            border       : 1px solid #ccc;
+            border-radius: 50%;
+            transform    : rotate(0deg);
+            box-sizing   : border-box;
+        }
+    }
+}
+
+.header_class {
+    display      : flex;
+    height       : 30px;
+    margin-left  : 10px;
+    margin-right : 10px;
+    margin-bottom: 10px;
+}
+
+.header_text {
+    height      : 30px;
+    line-height : 30px;
+    color       : #4A90E2;
+    font-size   : 14px;
+    margin-right: 11px;
+}
+
+.header_text2 {
+    height      : 30px;
+    line-height : 30px;
+    color       : #1890FF;
+    font-size   : 14px;
+    margin-right: 3px;
+    font-weight : bolder;
+}
+
+.header_search {
+    flex: 1;
+}
+
+.item {
+    border-radius   : 10px;
+    background-color: #fff;
+    border          : 1px #c4ebff solid;
+    margin-bottom   : 9px;
+    position        : relative;
+}
+
+.item_header {
+    background-color       : #e6f7ff;
+    height                 : 41px;
+    margin                 : auto 0;
+    padding-left           : 13px;
+    padding-right          : 13px;
+    display                : flex;
+    overflow               : hidden;
+    line-height            : 41px;
+    border-top-left-radius : 10px;
+    border-top-right-radius: 10px;
+}
+
+.checkbox_style {
+    background-color: #e6f7ff;
+    height          : 41px;
+    margin-right    : 5px;
+}
+
+.checkbox_scond {
+    background  : #fff;
+    margin-right: 5px;
+}
+
+.forward_box {
+    width          : 100%;
+    height         : 49px;
+    display        : flex;
+    position       : fixed;
+    bottom         : 50px;
+    justify-content: space-between;
+    align-items    : center;
+    background     : white;
+}
+
+.item_title {
+    flex         : 1;
+    font-size    : 16px;
+    color        : #000;
+    font-weight  : 500;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+}
+
+.item_header_register {
+    font-size   : 14px;
+    color       : #1890ff;
+    padding-left: 8px;
+    text-align  : right;
+}
+
+.item_info_layout {
+    padding-top: 2px;
+    border-top : 1px solid #C1C2C4;
+}
+
+.item_info_header {
+    padding-top  : 8px;
+    padding-left : 14px;
+    padding-right: 11px;
+    display: flex;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.item_info_header_name {
+    color        : #010101;
+    font-size    : 14px;
+    margin       : auto;
+    padding-right: 19px;
+    font-weight  : 500;
+}
+
+.item_info_header_text {
+    flex         : 1;
+    font-size    : 14px;
+    color        : #010101;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+}
+
+.item_info_header_time {
+    font-size   : 12px;
+    color       : #010101;
+    margin      : auto;
+    padding-left: 5px;
+}
+
+.item_info_msg {
+    color         : #9b9b9b;
+    margin-top    : 10px;
+    padding-bottom: 10px;
+    border-bottom : 1px #eaeaea solid;
+    padding-left  : 42px;
+    padding-right : 11px;
+    overflow      : hidden;
+    text-overflow : ellipsis;
+    white-space   : nowrap;
+}
+
+.item_info_button_layout {
+    display                   : flex;
+    height                    : 42px;
+    border-bottom-left-radius : 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.item_info_button_layout2 {
+    display      : flex;
+    height       : 42px;
+    border-bottom: 1px #c1c2c4 solid;
+}
+
+.item_info_button_1 {
+    flex       : 1;
+    text-align : center;
+    height     : 42px;
+    line-height: 42px;
+}
+
+.item_info_button_text {
+    color    : #1890ff;
+    font-size: 15px;
+    margin   : auto;
+}
+
+.warning_type_style {
+    display         : inline-block;
+    margin-top      : 12px;
+    width           : 16px;
+    height          : 16px;
+    border-radius   : 50%;
+    background-color: yellow;
+    text-align      : center;
+    line-height     : 16px;
+    color           : #ccc;
+}
+
+.warning_type_style_delay {
+    display         : inline-block;
+    margin-top      : 12px;
+    width           : 16px;
+    height          : 16px;
+    border-radius   : 50%;
+    background-color: red;
+    text-align      : center;
+    line-height     : 16px;
+    color           : #000;
+}
+
+.orderExceptionone {
+    height       : 18px;
+    width        : 18px;
+    border-radius: 50%;
+    border       : 1px solid #d0021b;
+    text-align   : center;
+    line-height  : 16px;
+    color        : #d0021b;
+    display      : inline-block;
+    margin-top   : 12px;
+}
+
+.title_comm {
+    
+}
+
+.list_view_css {
+    height      : calc(100vh - 16px);
+    margin-left : 10px;
+    margin-right: 10px;
+}

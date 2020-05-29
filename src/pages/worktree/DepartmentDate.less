@@ -1,0 +1,115 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.tableList {
+  .tableListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.tableListForm {
+  :global {
+    .ant-form-item {
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 24px;
+      > .ant-form-item-label {
+        width: auto;
+        padding-right: 8px;
+        line-height: 32px;
+      }
+      .ant-form-item-control {
+        line-height: 32px;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      flex: 1;
+    }
+  }
+  .submitButtons {
+    display: block;
+    margin-bottom: 24px;
+    white-space: nowrap;
+  }
+}
+
+.uploadPhotoCSS{
+  :global {
+    .ant-upload.ant-upload-select-picture-card {
+      border: 1px dashed #d9d9d9;
+      width: 192px;
+      height: 135px;
+      border-radius: 4px;
+      background-color: #fafafa;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+      vertical-align: top;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      display: table;
+    }
+    .ant-upload-list-picture-card{
+      float: left;
+      .ant-upload-list-item{
+        float: left;
+        width: 184px;
+        height: 130px;
+        margin: 0 8px 8px 0;
+        .ant-upload-list-item-info{
+          height: 100%;
+          position: relative;
+          overflow: hidden;
+          & > span{
+            display: block;
+            .ant-upload-list-item-thumbnail{
+                display: block;
+                width: 170px;
+                height: 121.25px;
+                top: 0px;
+                left: 0px
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.fromItem{
+  margin-bottom: 10px;
+}
+
+.titleName{
+  border: 1px solid #eee;
+  margin-top:10px;
+  margin-bottom: 5px;
+  margin-left: 5%;
+  width: 90%;
+  text-align: center;
+}
+
+.siders{
+  max-width: 40% !important;
+  min-width: 100px !important;
+  :global{
+    .ant-tree-node-content-wrapper {
+        width: calc(100% - 24px);
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .tableListForm :global(.ant-form-item) {
+    margin-right: 8px;
+  }
+}

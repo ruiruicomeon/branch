@@ -1,0 +1,125 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+
+.worningList{
+    :global {
+        .ant-collapse-content > .ant-collapse-content-box{
+            padding:10px 8px 0 8px !important;
+        }
+    }
+}
+
+.allselect{
+    :global {
+        .ant-alert{
+            padding-left:16px;
+        }
+
+    }
+}
+
+.rowstyle1{
+    :global {
+        .ant-collapse-content > .ant-collapse-content-box{
+            padding:0 16px
+        }
+    }
+}
+
+.checkbox_scond{
+ 
+}
+
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+
+.tableList {
+    .tableListOperator {
+
+        button {
+            margin-right: 8px;
+        }
+    }
+}
+
+.avatarWrapper {
+    :global {
+        img {
+            height: unset;
+        }
+    }
+}
+
+.formicon{
+    :global {
+        .ant-calendar-picker-icon{
+            margin-right:16px;
+        }
+        
+    }
+}
+
+
+.formlabel{
+    :global {
+        .ant-form-item-label{
+            text-align:center;
+            width:30px !important;
+        }
+    }
+}
+
+.tableListForm {
+    :global {
+        .ant-form-item {
+            display: flex;
+            margin-right: 0;
+            margin-bottom: 24px;
+
+            > .ant-form-item-label {
+                width: 90px;
+                padding-right: 8px;
+                line-height: 32px;
+            }
+
+            .ant-form-item-control {
+                line-height: 32px;
+            }
+        }
+
+        .ant-form-item-control-wrapper {
+            flex: 1;
+        }
+    }
+
+    .submitButtons {
+        display: block;
+        margin-bottom: 24px;
+        white-space: nowrap;
+    }
+}
+
+.buttonLeft{
+    :global {
+        .ant-btn-primary{
+            margin-left:35px;
+        }
+    }
+}
+
+@media screen and (max-width: @screen-lg) {
+    .tableListForm :global(.ant-form-item) {
+        margin-right: 24px;
+    }
+}
+
+@media screen and (max-width: @screen-md) {
+    .tableListForm :global(.ant-form-item) {
+        margin-right: 8px;
+    }
+}
+.batchnum_css{
+    width: 150px;
+}

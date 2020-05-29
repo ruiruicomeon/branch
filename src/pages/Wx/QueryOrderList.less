@@ -1,0 +1,175 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.tabBar {
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+.contentbox {
+    // height: calc(100% - 46px);
+    height: 100%;
+    :global{
+        .ant-empty {
+            margin: 50% 8px;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+    }
+ 
+}
+
+.list_wrap{
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    overflow: scroll;
+    height: calc(100% + 1px);
+    -webkit-overflow-scrolling: touch;
+}
+.list_style {
+    font-size: 14px;
+    color: #cccccc;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.list_heared {
+    display: flex;
+    justify-content: space-between;
+}
+.header_class {
+    display: flex;
+    height: 30px;
+}
+
+.header_search {
+    flex: 1;
+}
+
+.item {
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px #c4ebff solid;
+    margin-bottom: 9px;
+}
+
+.item_header {
+    background-color: #e6f7ff;
+    height: 41px;
+    margin: auto 0;
+    padding-left: 13px;
+    padding-right: 13px;
+    display: flex;
+    line-height: 41px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.item_title {
+    flex: 1;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.header_text {
+    height: 30px;
+    line-height: 30px;
+    color: #888;
+    font-size: 14px;
+    margin-right: 11px;
+}
+.header_text2 {
+    height: 30px;
+    line-height: 30px;
+    color: #4a90e2;
+    font-size: 14px;
+    margin-right: 11px;
+    font-weight: bolder;
+}
+.my_list .spe .am-list-extra {
+    flex-basis: initial;
+}
+
+.item_header_register {
+    font-size: 14px;
+    color: #1890ff;
+    padding-left: 5px;
+    padding-right: 2px;
+    text-align: right;
+    white-space: nowrap;
+}
+.list_view_content {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: calc(100vh - 0px);
+}
+.list_item {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #cccccc;
+    justify-content: space-between;
+}
+.iswatch .warringType {
+    padding-left: 8px;
+    width: 20px;
+    height: 20px;
+}
+.no_warning_box {
+    width: 48px;
+    height: 25px;
+    border: 2px solid green;
+    text-align: center;
+}
+.warning_box {
+    width: 48px;
+    height: 25px;
+    border: 2px solid red;
+    text-align: center;
+}
+.warning_yellow {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #faad14;
+    text-align: center;
+    line-height: 20px;
+    color: #faad14;
+}
+.orderSelfNum {
+    padding-left: 6px;
+    width: 170px;
+    height: 24px;
+    font-size: 16px;
+    color: #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.header_register {
+    width: 38px;
+    height: 24px;
+}
+.orderException_box {
+    width: 20px;
+    height: 20px;
+    padding-left: 2px;
+}
+.orderExceptionone {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #d0021b;
+    text-align: center;
+    line-height: 20px;
+    color: #d0021b;
+}
